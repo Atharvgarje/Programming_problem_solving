@@ -8,8 +8,6 @@ public class Calculator {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== Simple Calculator ===");
-
         System.out.print("Enter first number: ");
         double num1 = sc.nextDouble();
 
@@ -17,11 +15,11 @@ public class Calculator {
         double num2 = sc.nextDouble();
 
         System.out.print("Choose operation (+, -, *, /): ");
-        char operator = sc.next().charAt(0);
+        char op = sc.next().charAt(0);
 
         double result;
 
-        switch (operator) {
+        switch (op) {
             case '+':
                 result = num1 + num2;
                 System.out.println("Result = " + result);
